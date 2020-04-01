@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="src/css/style.css">
+  <link rel="stylesheet" type="text/css" href="src/css/swiper.min.css">
+  <title>НКО Строевые выходные</title>
+</head>
+<body>
+  <header id="header" class="header">
+    <div class="header__wrapper wrapper">
+      <!-- <picture class="img-block__container">
+        <source srcset="build/img/title-page/photo-da-desktop.png" media="(min-width: 900px)">
+        <img src="src/img/header/" alt="MDN" class="img-block__img">
+      </picture> -->
+      <img src="src/img/header/logo.min.png" alt="logo" class="header__logo">
+      <button class="header__burger burger btn" aria-label="Открыть меню">
+        <span class="burger__line burger__line--1"></span>
+        <span class="burger__line burger__line--2"></span>
+        <span class="burger__line burger__line--3"></span>
+      </button>
+      <nav class="header__menu top-menu">
+        <ul class="top-menu__list">
+          <li class="top-menu__item">
+            <a href="#information" class="top-menu__link">О&nbsp;нас</a>
+          </li>
+          <li class="top-menu__item">
+            <a href="#training" class="top-menu__link">Программа</a>
+          </li>
+          <li class="top-menu__item">
+            <a href="#photo" class="top-menu__link">Фото</a>
+          </li>
+          <li class="top-menu__item">
+            <a href="#video" class="top-menu__link">Видео</a>
+          </li>
+          <li class="top-menu__item">
+            <a href="#partners" class="top-menu__link">Партнеры</a>
+          </li>
+          <li class="top-menu__item">
+            <a href="#footer" class="top-menu__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__phones">
+        <a href="tel:+79999999999" class="header__phone">
+          8-999-999-99-99
+        </a>
+        <a href="tel:+79999999999" class="header__phone">
+          8-999-999-99-99
+        </a>
+      </div>
+      <ul class="header__social social">
+        <li class="social__item">
+          <a href="#" class="social__link social__link--vk"></a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link social__link--facebook"></a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link social__link--instagram"></a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <section class="title-page" id="title-page">
+    <div class="title-page__wrapper wrapper">
+      <img src="src/img/title-page-img.png" alt="star" class="title-page__img">
+      <div class="title-page__content">
+        <h2 class="title-page__subtitle h h--2">Некоммерческая организация</h2>
+        <h1 class="title-page__title">Строевые выходные</h1>
+      </div>
+    </div>
+    <div class="title-page__slider slider">
+      <div class="swiper-wrapper">
+        <img src="src/img/title-page/slide-3.jpg" alt="" class="swiper-slide">
+        <img src="src/img/title-page/slide-2.jpg" alt="" class="swiper-slide">
+        <img src="src/img/title-page/slide-1.JPG" alt="" class="swiper-slide">
+      </div>
+    </div>
+  </section>
+  <section class="information" id="information">
+    <div class="information__wrapper wrapper">
+      <h2 class="information__title h h--2">О нас</h2>
+      <div class="information__content"> 
+        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur."
+      </div>
+    </div>
+  </section>
+  <section class="training" id="training">
+    <div class="training__wrapper wrapper">
+      <h2 class="training__title h h--2">Программа подготовки</h2>
+      <div class="training__block">
+        <h3 class="training__subtitle h h--3">Огневая подготовка</h3>
+        <img src="src/img/training/nophoto.jpg" alt="no-foto" class="training__img">
+        <button class="training__btn btn">ПОДРОБНЕЕ</button>
+      </div>
+      <div class="training__block">
+        <h3 class="training__subtitle h h--3">Тактическая подготовка</h3>
+        <img src="src/img/training/nophoto.jpg" alt="no-foto" class="training__img">
+        <button class="training__btn btn">ПОДРОБНЕЕ</button>
+      </div>
+      <div class="training__block">
+        <h3 class="training__subtitle h h--3">Армейский быт</h3>
+        <img src="src/img/training/nophoto.jpg" alt="no-foto" class="training__img">
+        <button class="training__btn btn">ПОДРОБНЕЕ</button>
+      </div>
+      <div class="training__block">
+        <h3 class="training__subtitle h h--3">Теоретическая подготовка</h3>
+        <img src="src/img/training/nophoto.jpg" alt="no-foto" class="training__img">
+        <button class="training__btn btn">ПОДРОБНЕЕ</button>
+      </div>
+    </div>
+  </section>
+  <section class="photo" id="photo">
+    <div class="photo__wrapper wrapper">
+      <h2 class="photo__title h h--2">
+        Фото
+      </h2>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <ul class="swiper-slide">
+              <li class="photo__item">
+                <a href="#" class="photo__link">
+                  <img src="src/img/training/nophoto.jpg" alt="no-foto" class="photo__img">
+                </a>
+              </li>
+              <li class="photo__item">
+                <a href="#" class="photo__link">
+                  <img src="src/img/training/nophoto.jpg" alt="no-foto" class="photo__img">
+                </a>
+              </li>
+              <li class="photo__item">
+                <a href="#" class="photo__link">
+                  <img src="src/img/training/nophoto.jpg" alt="no-foto" class="photo__img">
+                </a>
+              </li>
+              <li class="photo__item">
+                <a href="#" class="photo__link">
+                  <img src="src/img/training/nophoto.jpg" alt="no-foto" class="photo__img">
+                </a>
+              </li>
+              <li class="photo__item">
+                <a href="#" class="photo__link">
+                  <img src="src/img/training/nophoto.jpg" alt="no-foto" class="photo__img">
+                </a>
+              </li>
+              <li class="photo__item">
+                <a href="#" class="photo__link">
+                  <img src="src/img/training/nophoto.jpg" alt="no-foto" class="photo__img">
+                </a>
+              </li>
+              <li class="photo__item">
+                <a href="#" class="photo__link">
+                  <img src="src/img/training/nophoto.jpg" alt="no-foto" class="photo__img">
+                </a>
+              </li>
+              <li class="photo__item">
+                <a href="#" class="photo__link">
+                  <img src="src/img/training/nophoto.jpg" alt="no-foto" class="photo__img">
+                </a>
+              </li>
+            </ul>
+            <ul class="swiper-slide">
+              <li class="photo__item">
+                <a href="#" class="photo__link">
+                  <img src="src/img/training/nophoto.jpg" alt="no-foto" class="photo__img">
+                </a>
+              </li>
+              <li class="photo__item">
+                <a href="#" class="photo__link">
+                  <img src="src/img/training/nophoto.jpg" alt="no-foto" class="photo__img">
+                </a>
+              </li>
+              <li class="photo__item">
+                <a href="#" class="photo__link">
+                  <img src="src/img/training/nophoto.jpg" alt="no-foto" class="photo__img">
+                </a>
+              </li>
+              <li class="photo__item">
+                <a href="#" class="photo__link">
+                  <img src="src/img/training/nophoto.jpg" alt="no-foto" class="photo__img">
+                </a>
+              </li>
+              <li class="photo__item">
+                <a href="#" class="photo__link">
+                  <img src="src/img/training/nophoto.jpg" alt="no-foto" class="photo__img">
+                </a>
+              </li>
+              <li class="photo__item">
+                <a href="#" class="photo__link">
+                  <img src="src/img/training/nophoto.jpg" alt="no-foto" class="photo__img">
+                </a>
+              </li>
+              <li class="photo__item">
+                <a href="#" class="photo__link">
+                  <img src="src/img/training/nophoto.jpg" alt="no-foto" class="photo__img">
+                </a>
+              </li>
+              <li class="photo__item">
+                <a href="#" class="photo__link">
+                  <img src="src/img/training/nophoto.jpg" alt="no-foto" class="photo__img">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div> 
+      </div>
+    </div>
+    <div class="slider-button-prev"></div>
+    <div class="slider-button-next"></div>
+  </section>
+  <section class="video" id="video">
+    <div class="video__wrapper wrapper">
+      <h2 class="video__title h h--2">Видео</h2>
+      <ul class="video__list">
+        <li class="video__content">
+          <p class="video__description">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.</p>
+          <div class="video__play">
+            <iframe class="video-block__video" src="https://www.youtube.com/embed/Pqaaz2Ryp1I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </li>
+        <li class="video__content">
+          <p class="video__description">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.</p>
+          <div class="video__play">
+            <iframe class="video-block__video" src="https://www.youtube.com/embed/r1wtsOuCOtY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </li>
+        <li class="video__content">
+          <p class="video__description">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.</p>
+          <div class="video__play video-block">
+            <iframe class="video-block__video" src="https://www.youtube.com/embed/Q5eDhfthEa4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="partners" id="partners">
+    <div class="partners__wrapper wrapper">
+      <h2 class="partners__title h h--2">
+        Наши партнеры
+      </h2>
+      <ul class="partners__list">
+        <li class="partners__item">
+          <img src="src//img/header/logo.min.png" alt="nophoto" class="partners__img">
+        </li>
+        <li class="partners__item">
+          <img src="src//img/header/logo.min.png" alt="nophoto" class="partners__img">
+        </li>
+        <li class="partners__item">
+          <img src="src//img/header/logo.min.png" alt="nophoto" class="partners__img">
+        </li>
+        <li class="partners__item">
+          <img src="src//img/header/logo.min.png" alt="nophoto" class="partners__img">
+        </li>
+        <li class="partners__item">
+          <img src="src//img/header/logo.min.png" alt="nophoto" class="partners__img">
+        </li>
+        <li class="partners__item">
+          <img src="src//img/header/logo.min.png" alt="nophoto" class="partners__img">
+        </li>
+        <li class="partners__item">
+          <img src="src//img/header/logo.min.png" alt="nophoto" class="partners__img">
+        </li>
+        <li class="partners__item">
+          <img src="src//img/header/logo.min.png" alt="nophoto" class="partners__img">
+        </li>
+        <li class="partners__item">
+          <img src="src//img/header/logo.min.png" alt="nophoto" class="partners__img">
+        </li>
+        <li class="partners__item">
+          <img src="src//img/header/logo.min.png" alt="nophoto" class="partners__img">
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="form-container" id="form-container">
+    <div class="form-container__wrapper wrapper">
+      <h2 class="form-container__title">
+        Заполните заявку учаснтика
+      </h2>
+      <form action="" class="form-container__form form">
+        <div class="form__block-text">
+          <label for="i-name" class="form__title-text">Ваше Имя:</label>
+          <input type="text" name="name" id="i-name" class="form__text">
+          <label for="i-surname" class="form__title-text">Ваша фамилия:</label>
+          <input type="text" name="surname" id="i-surname" class="form__text">
+          <label for="i-date" class="form__title-text">Дата рождения:</label>
+          <input type="date" name="date" id="i-date" class="form__text">
+          <label for="i-social" class="form__title-text">Откуда Вы о нас узнали:</label>
+          <input type="text" name="i-social" id="i-social" class="form__text">
+          <label for="a" class="form__title-text">Ваше Имя:</label>
+          <input type="text" name="name" id="a" class="form__text">
+          <label for="b" class="form__title-text">Ваше Имя:</label>
+          <input type="text" name="name" id="b" class="form__text">
+          <label for="c" class="form__title-text">Ваше Имя:</label>
+          <input type="text" name="name" id="c" class="form__text">
+        </div>
+        <input type="submit" name="submit" class="form__btn btn">
+      </form>
+    </div>
+  </section>
+  <footer id="footer" class="footer">
+    <div class="footer__wrapper wrapper">
+      <ul class="footer__menu bottom-menu">
+        <li class="bottom-menu__item">
+          <a href="#information" class="bottom-menu__link">О&nbsp;нас</a>
+        </li>
+        <li class="bottom-menu__item">
+          <a href="#training" class="bottom-menu__link">Программа</a>
+        </li>
+        <li class="bottom-menu__item">
+          <a href="#photo" class="bottom-menu__link">Фото</a>
+        </li>
+        <li class="bottom-menu__item">
+          <a href="#video" class="bottom-menu__link">Видео</a>
+        </li>
+        <li class="bottom-menu__item">
+          <a href="#partners" class="bottom-menu__link">Партнеры</a>
+        </li>
+        <li class="bottom-menu__item">
+          <a href="#footer" class="bottom-menu__link">Контакты</a>
+        </li>
+      </ul>
+      <ul class="footer__contacts contacts">
+        <li class="contacts__item">
+          <a href="tel:+79999999999" class="contacts__link">8-999-999-99-99</a>
+        </li>
+        <li class="contacts__item">
+          <a href="tel:+79999999999" class="contacts__link">8-999-999-99-99</a>
+        </li>
+        <li class="contacts__item">
+          <a href="email:email@email.ru" class="contacts__link">email@email.ru</a>
+        </li>
+      </ul>
+      <div class="footer__social">
+        <img src="src/img/header/logo.min.png" alt="logo" class="footer__logo">
+        <ul class="footer__social social">
+          <li class="social__item">
+            <a href="#" class="social__link social__link--vk"></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--facebook"></a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--instagram"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="src/js/slider/swiper.min.js"></script>
+  <script src="src/js/swiper.js"></script>
+  <script src="src/js/script.js"></script>
+</body>
+</html>
