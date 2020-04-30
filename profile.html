@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="theme-color" content="#ffffff">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="apple-touch-icon" sizes="180x180" href="build/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="build/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="build/favicon/favicon-16x16.png">
+  <link rel="manifest" href="build/favicon/site.webmanifest">
+  <link rel="mask-icon" href="build/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="stylesheet" type="text/css" href="build/css/style.css">
+  <title>Анкета участника "Строевые Выходные"</title>
+</head>
+<body>
+  <main class="profile-container">
+    <section class="profile wrapper">
+      <h2 class="profile__title h h--2"> Анкета участника</h1>
+      <form action="" class="profile__form profile-form">
+        <ul class="profile-form__list">
+          <li class="profile-form__item">
+            <label for="surname">
+              <h4 class="profile-form__question h--4">Фамилия: *</h4>
+            </label>
+            <input type="text" name="surname" id="surname" class="profile-form__field" placeholder="Фамилия" required/>
+          </li>
+          <li class="profile-form__item">
+            <label for="name">
+              <h4 class="profile-form__question h--4">Имя: *</h4>
+            </label>
+            <input type="text" name="name" id="name" class="profile-form__field" placeholder="Иван" required/>
+          </li>
+          <li class="profile-form__item">
+            <label for="patronymic">
+              <h4 class="profile-form__question h--4">Отчество:</h4>
+            </label>
+            <input type="text" name="patronymic" id="patronymic" class="profile-form__field" placeholder="Иванович"/>
+          </li>
+          <li class="profile-form__item">
+            <label for="date-birth" class="profile-form__question">
+              <h4 class="profile-form__question h--4">Дата рождения: *</h4>
+            </label>
+            <input type="date" name="date-birth" id="date-birth" class="profile-form__field" required/>
+          </li>
+          <li class="profile-form__item">
+            <label for="citizenship" class="profile-form__question">
+              <h4 class="profile-form__subtitle h--4">Гражданство: *</h4>
+            </label>
+            <input type="text" name="citizenship" id="citizenship" class="profile-form__field" placeholder="РФ" required/>
+          </li>
+          <li class="profile-form__item">
+            <label for="city" class="profile-form__question">
+              <h4 class="profile-form__subtitle h--4">Город проживания:</h4>
+            </label>
+            <input type="text" name="city" id="city" class="profile-form__field" placeholder="Воронеж"/>
+          </li>
+          <li class="profile-form__item">
+            <label for="phone" class="profile-form__question">
+              <h4 class="profile-form__subtitle h--4">Номер телефона:</h4>
+            </label>
+            <input type="text" name="phone" id="phone" class="profile-form__field" placeholder="8-999-999-99-99"/>
+          </li>
+          <li class="profile-form__item">
+            <label for="email">
+              <h4 class="profile-form__question h--4">Электронная почта: *</h4>
+            </label>
+            <input type="email" name="email" id="email" class="profile-form__field" placeholder="email@email.ru" required/>
+          </li>
+          <li class="profile-form__item">
+            <h4 class="profile-form__question h--4">Наличие спортивного разряда</h4>
+            <div class="profile-form__dot-blok dot-block">
+              <input type="radio" name="sport-category" id="sport-category--yes" class="dot-block__dot"/>
+              <label for="sport-category--yes" class="dot-block__name-dot">
+                Да
+              </label>
+            </div>
+            <div class="profile-form__dot-blok dot-block">
+              <input type="radio" name="sport-category" id="sport-category--no" class="dot-block__dot"/>
+              <label for="sport-category--no" class="dot-block__name-dot">
+                Нет
+              </label>
+            </div>
+          </li>
+          <li class="profile-form__item">
+            <h4 class="profile-form__question h--4">Наличие судимости</h4>
+            <div class="profile-form__dot-blok dot-block">
+              <input type="radio" name="criminal" id="criminal--yes" class="dot-block__dot"/>
+              <label for="criminal--yes" class="dot-block__name-dot">
+                Да
+              </label>
+            </div>
+            <div class="profile-form__dot-blok dot-block">
+              <input type="radio" name="criminal" id="criminal--no" class="dot-block__dot"/>
+              <label for="criminal--no" class="dot-block__name-dot">
+                Нет
+              </label>
+            </div>
+          </li>
+          <li class="profile-form__item">
+            <h4 class="profile-form__question h--4">Участвовали ли Вы когда-нибудь в командных спортивных/патриотических соревнованиях? Укажите последние</h4>
+            <div class="profile-form__dot-blok dot-block">
+              <input type="radio" name="sport-competition" id="sport-competition--yes" class="dot-block__dot"/>
+              <label for="sport-competition--yes" class="dot-block__name-dot">
+                Да
+              </label>
+            </div>
+            <div class="profile-form__dot-blok dot-block">
+              <input type="radio" name="sport-competition" id="sport-competition--no" class="dot-block__dot"/>
+              <label for="sport-competition--no" class="dot-block__name-dot">
+                Нет
+              </label>
+            </div>
+          </li>
+          <li class="profile-form__item">
+            <label for="patronymic" class="profile-form__question">
+              <h4 class="profile-form__question h--4">Сcылка на социальные сети</h4>
+            </label>
+            <input type="text" id="patronymic" class="profile-form__field"/>
+          </li>
+          <li class="profile-form__item">
+            <label for="patronymic" class="profile-form__question">
+              <h4 class="profile-form__question h--4">Сcылка на социальные сети</h4>
+            </label>
+            <input type="text" id="patronymic" class="profile-form__field"/>
+          </li>
+          <li class="profile-form__item profile-form__item--consent">
+            <input type="checkbox" name="consent" id="consent" class="profile-form__checkbox" required/>
+            <label for="consent">
+              <h4 class="profile-form__question h--4">Я согласен на обработку и подтверждаю достоверность предоставленных мной персональных данных</h4>
+            </label> 
+          </li>
+        </ul>
+        <input type="submit" id="patronymic" class="btn main-btn"/>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

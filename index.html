@@ -11,22 +11,22 @@
   <link rel="icon" type="image/png" sizes="16x16" href="build/favicon/favicon-16x16.png">
   <link rel="manifest" href="build/favicon/site.webmanifest">
   <link rel="mask-icon" href="build/favicon/safari-pinned-tab.svg" color="#5bbad5">
-  <link rel="stylesheet" type="text/css" href="src/css/style.css">
-  <link rel="stylesheet" type="text/css" href="src/css/swiper.min.css">
-  <title>НКО СТРОЕВЫЕ ВЫХОДНЫЕ</title>
+  <link rel="stylesheet" type="text/css" href="build/css/style.css">
+  <link rel="stylesheet" type="text/css" href="build/css/swiper.min.css">
+  <title>ВОЕННО-ПАТРИОТИЧЕСКИЕ ИГРЫ СТРОЕВЫЕ ВЫХОДНЫЕ</title>
 </head>
 <body>
   <header id="header" class="header">
     <div class="header__wrapper wrapper">
       <a href="#" class="header__logo">
-        <img src="src/img/header/logo.min.png" alt="logo" class="header__logo-img">
+        <img src="build/img/header/logo.min.png" alt="logo" class="header__logo-img">
       </a>
       <button class="header__burger burger btn" aria-label="Открыть меню">
         <span class="burger__line burger__line--1"></span>
         <span class="burger__line burger__line--2"></span>
         <span class="burger__line burger__line--3"></span>
       </button>
-      <div class="header__phones">
+      <div class="header__phone-container">
         <a href="tel:+79999999999" class="header__phone">
           8-999-999-99-99
         </a>
@@ -58,6 +58,9 @@
             <li class="top-menu__item">
               <a href="#footer" class="top-menu__link">Контакты</a>
             </li>
+            <li class="top-menu__item top-menu__item--member">
+              <a href="profile.html" class="top-menu__link" target="_blank">Стать участником</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -65,41 +68,44 @@
   </header>
   <section class="title-page" id="title-page">
     <div class="title-page__wrapper wrapper">
-      <img src="src/img/title-page-img.png" alt="star" class="title-page__img">
+      <img src="build/img/title-page/title-page-img.png" alt="star" class="title-page__img">
       <div class="title-page__content">
-        <h2 class="title-page__subtitle h h--2">Некоммерческая организация</h2>
-        <h1 class="title-page__title top-title"><p class="top-title__word top-title__word--blue">Строевые</p><p class="top-title__word top-title__word--red">выходные</p></h1>
+        <h1 class="title-page__title top-title">Военно-патриотические игры<p class="top-title__word top-title__word--blue">Строевые</p><p class="top-title__word top-title__word--red">выходные</p></h1>
         <ul class="title-page__social social">
           <li class="social__item">
-            <a href="#" class="social__link social__link--vk"></a>
+            <a href="https://vk.com/stroevye" class="social__link social__link--vk" target="_blank"></a>
           </li>
           <li class="social__item">
-            <a href="#" class="social__link social__link--youtube"></a>
+            <a href="https://www.youtube.com/channel/UC56X2VOFPN-qOeoTC5rA_mQ" class="social__link social__link--youtube" target="_blank"></a>
           </li>
           <li class="social__item">
-            <a href="#" class="social__link social__link--instagram"></a>
+            <a href="https://instagram.com/stroevye_v_e" class="social__link social__link--instagram" target="_blank"></a>
           </li>
         </ul>
-        <a href="#training" class="title-page__btn btn">Узнать больше</a>
+        <div class="title-page__btn-container">
+          <a href="#training" class="title-page__btn btn main-btn">Узнать больше</a>
+          <a href="#materials" class="title-page__btn btn main-btn">Стать участником</a>
+        </div>
       </div>
       <div class="title-page__form-container">
         <form action="" class="title-page__form title-form">
-          <h3 class="title-form__title h">Форма обратной связи</h3>
+          <h3 class="title-form__title h">Заказать обратный звонок</h3>
           <label for="" class="l-title-form__info">Введите Ваше имя:</label>
-          <input type="text" class="i-title-form__info">
-          <label for="" class="l-title-form__info">Введите Ваш e-mail:</label>
-          <input type="email" class="i-title-form__info">
-          <label for="" class="l-title-form__info">Текст обращения:</label>
-          <input type="text" class="i-title-form__info">
-          <input type="submit" class="i-title-form__submit btn">
+          <input type="text" class="i-title-form__info"/>
+          <label for="" class="l-title-form__info">Введите Ваш телефон:</label>
+          <input type="email" class="i-title-form__info"/>
+          <label for="" class="l-title-form__info">Тема обращения:</label>
+          <input type="text" class="i-title-form__info"/>
+          <input type="submit" class="i-title-form__submit submit-btn btn"/>
         </form>
       </div>
     </div>
-    <div class="title-page__slider slider">
-      <div class="swiper-wrapper">
-        <img src="src/img/title-page/slide-3.jpg" alt="" class="swiper-slide">
-        <img src="src/img/title-page/slide-2.jpg" alt="" class="swiper-slide">
-        <img src="src/img/title-page/slide-1.JPG" alt="" class="swiper-slide">
+    <div class="title-page__slider tp-slider">
+      <div class="tp-slider__wrapper swiper-wrapper">
+        <img src="build/img/photo/slide-1.jpg" alt="" class="tp-slider__item swiper-slide">
+        <img src="build/img/photo/slide-2.jpg" alt="" class="tp-slider__item swiper-slide">
+        <img src="build/img/photo/slide-3.jpg" alt="" class="tp-slider__item swiper-slide">
+        <img src="build/img/photo/slide-4.jpg" alt="" class="tp-slider__item swiper-slide">
       </div>
     </div>
   </section>
@@ -107,75 +113,73 @@
     <div class="information__wrapper wrapper">
       <h2 class="information__title h h--2">О нас</h2>
       <div class="information__content"> 
-        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
-        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa 
-        quae ab illo inventore veritatis et quasi architecto beatae vitae 
-        dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit 
-        aspernatur aut odit aut fugit, sed quia consequuntur magni dolores 
-        eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, 
-        qui dolorem ipsum quia dolor sit amet, consectetur."
+        <p>Межрегиональная Общественная Организаия "Военно&#8209;патриотическое&nbsp;общество&nbsp;- Строевые Выходные" создана по&nbsp;инициативе молодокого поклонения военнослужащих в&nbsp;ходе реализации с&nbsp;2016&nbsp;года социально значимого Военно&#8209;патриотического проекта "Строевые&nbsp;Выходные".</p>
+        <p>Целью проекта является создание доступных условий военной подготовки в&nbsp;обстановке максимально приближенной к&nbsp;реальной, а&nbsp;также популяризация службы в&nbsp;Вооруженных&nbsp;Силах Российской&nbsp;Федерации</p>
       </div>
     </div>
   </section>
   <section class="training" id="training">
     <div class="training__wrapper wrapper">
       <h2 class="training__title h h--2">Программа подготовки</h2>
-      <div class="training__сard card">
-        <div class="card__front">
-          <h3 class="card__title h h--3">Огневая подготовка</h3>
-          <img src="src/img/training/nophoto.jpg" alt="no-foto" class="card__img">
-          <button class="card__btn card-front__btn btn">ПОДРОБНЕЕ</button>
-        </div>
-        <div class="card__back">
-          <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa 
-            quae ab illo inventore veritatis et quasi architecto beatae vitae 
-            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit</p>
-          <button class="card__btn card-back__btn btn">ОБРАТНО</button>
-        </div>
-      </div>
-      <div class="training__сard card">
-        <div class="card__front">
-          <h3 class="card__title h h--3">Тактическая подготовка</h3>
-          <img src="src/img/training/nophoto.jpg" alt="no-foto" class="card__img">
-          <button class="card__btn card-front__btn btn">ПОДРОБНЕЕ</button>
-        </div>
-        <div class="card__back">
-          <p class="card__information">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa 
-            quae ab illo inventore veritatis et quasi architecto beatae vitae 
-            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit</p>
-          <button class="card__btn card-back__btn btn">ОБРАТНО</button>
-        </div>
-      </div>
-      <div class="training__сard card">
-        <div class="card__front">
-          <h3 class="card__title h h--3">Общая подготовка</h3>
-          <img src="src/img/training/nophoto.jpg" alt="no-foto" class="card__img">
-          <button class="card__btn card-front__btn btn">ПОДРОБНЕЕ</button>
-        </div>
-        <div class="card__back">
-          <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa 
-            quae ab illo inventore veritatis et quasi architecto beatae vitae 
-            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit</p>
-          <button class="card__btn card-back__btn btn">ОБРАТНО</button>
-        </div>
-      </div>
-      <div class="training__сard card">
-        <div class="card__front">
-          <h3 class="card__title h h--3">Теоретическая подготовка</h3>
-          <img src="src/img/training/nophoto.jpg" alt="no-foto" class="card__img">
-          <button class="card__btn card-front__btn btn">ПОДРОБНЕЕ</button>
-        </div>
-        <div class="card__back">
-          <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa 
-            quae ab illo inventore veritatis et quasi architecto beatae vitae 
-            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit</p>
-          <button class="card__btn card-back__btn btn">ОБРАТНО</button>
-        </div>
-      </div>
+      <ul class="training__list">
+        <li class="training__item card">
+          <div class="card__front">
+            <h3 class="card__title h h--3">Огневая подготовка</h3>
+            <img src="build/img/training/fire-training.png" alt="fire-training" class="card__img">
+            <button class="card__btn card-front__btn btn">Подробнее</button>
+          </div>
+          <div class="card__back">
+            <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa 
+              quae ab illo inventore veritatis et quasi architecto beatae vitae 
+              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit</p>
+            <button class="card__btn card-back__btn btn">Обратно</button>
+          </div>
+        </li>
+        <li class="training__item card">
+          <div class="card__front">
+            <h3 class="card__title h h--3">Тактическая подготовка</h3>
+            <img src="build/img/training/tactical-training.png" alt="tactical-training" class="card__img">
+            <button class="card__btn card-front__btn btn">Подробнее</button>
+          </div>
+          <div class="card__back">
+            <p class="card__information">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa 
+              quae ab illo inventore veritatis et quasi architecto beatae vitae 
+              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit</p>
+            <button class="card__btn card-back__btn btn">Обратно</button>
+          </div>
+        </li>
+        <li class="training__item card">
+          <div class="card__front">
+            <h3 class="card__title h h--3">Общая подготовка</h3>
+            <img src="build/img/training/common-training.png" alt="common-training" class="card__img">
+            <button class="card__btn card-front__btn btn">Подробнее</button>
+          </div>
+          <div class="card__back">
+            <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa 
+              quae ab illo inventore veritatis et quasi architecto beatae vitae 
+              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit</p>
+            <button class="card__btn card-back__btn btn">Обратно</button>
+          </div>
+        </li>
+        <li class="training__item card">
+          <div class="card__front">
+            <h3 class="card__title h h--3">Теоретическая подготовка</h3>
+            <img src="build/img/training/theoretical-training.png" alt="theoretical-training" class="card__img">
+            <button class="card__btn card-front__btn btn">Подробнее</button>
+          </div>
+          <div class="card__back">
+            <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa 
+              quae ab illo inventore veritatis et quasi architecto beatae vitae 
+              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit</p>
+            <button class="card__btn card-back__btn btn">Обратно</button>
+          </div>
+        </li>
+      </ul>
+      <button class="training__btn btn order-btn main-btn">Узнать больше</button>
     </div>
   </section>
   <section class="photo" id="photo">
@@ -184,17 +188,38 @@
         Фото
       </h2>
       <div class="photo__slider photo-slider">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="build//img/training/nophoto.jpg" alt="slide-1" class="photo-slider__img">
-          </div>
-          <div class="swiper-slide">
-            <img src="build//img/training/nophoto.jpg" alt="slide-2" class="photo-slider__img">
-          </div>
-          <div class="swiper-slide">
-            <img src="build//img/training/nophoto.jpg" alt="slide-3" class="photo-slider__img">
-          </div>  
-        </div>
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide">
+            <img src="build/img/photo/slide-1.jpg" alt="slide-1" class="photo-slider__img">
+          </li>
+          <li class="swiper-slide">
+            <img src="build/img/photo/slide-2.jpg" alt="slide-2" class="photo-slider__img">
+          </li>
+          <li class="swiper-slide">
+            <img src="build/img/photo/slide-3.jpg" alt="slide-3" class="photo-slider__img">
+          </li>
+          <li class="swiper-slide">
+            <img src="build/img/photo/slide-4.jpg" alt="slide-4" class="photo-slider__img">
+          </li>
+          <li class="swiper-slide">
+            <img src="build/img/photo/slide-5.jpg" alt="slide-5" class="photo-slider__img">
+          </li>
+          <li class="swiper-slide">
+            <img src="build/img/photo/slide-6.jpg" alt="slide-6" class="photo-slider__img">
+          </li>
+          <li class="swiper-slide">
+            <img src="build/img/photo/slide-7.jpg" alt="slide-7" class="photo-slider__img">
+          </li>
+          <li class="swiper-slide">
+            <img src="build/img/photo/slide-8.jpg" alt="slide-8" class="photo-slider__img">
+          </li>
+          <li class="swiper-slide">
+            <img src="build/img/photo/slide-9.JPG" alt="slide-9" class="photo-slider__img">
+          </li>
+          <li class="swiper-slide">
+            <img src="build/img/photo/slide-10.jpg" alt="slide-10" class="photo-slider__img">
+          </li>  
+        </ul>
         <div class="photo-slider__pagination"></div>
         <button class="photo__btn photo__btn--prev btn"></button>
         <button class="photo__btn photo__btn--next btn"></button>
@@ -208,7 +233,7 @@
         <li class="video__content">
           <p class="video__description">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.</p>
           <div class="video__play">
-            <iframe class="video-block__video" src="https://www.youtube.com/embed/Pqaaz2Ryp1I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="video-block__video" src="https://www.youtube.com/embed/FTGFgFjSUhQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </li>
         <li class="video__content">
@@ -220,10 +245,11 @@
         <li class="video__content">
           <p class="video__description">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.</p>
           <div class="video__play video-block">
-            <iframe class="video-block__video" src="https://www.youtube.com/embed/Q5eDhfthEa4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="video-block__video" src="https://www.youtube.com/embed/Pqaaz2Ryp1I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </li>
       </ul>
+      <button class="video__btn btn main-btn">Узнать больше</button>
     </div>
   </section>
   <section class="partners" id="partners">
@@ -233,62 +259,79 @@
       </h2>
       <ul class="partners__list">
         <li class="partners__item">
-          <img src="src//img/header/logo.min.png" alt="nophoto" class="partners__img">
+          <img src="build/img/partners/ministry-of-defence.png" alt="ministry-of-defence" class="partners__img">
         </li>
         <li class="partners__item">
-          <img src="src//img/header/logo.min.png" alt="nophoto" class="partners__img">
+          <img src="build/img/partners/sambo.png" alt="Федерация боевого самбо" class="partners__img">
         </li>
         <li class="partners__item">
-          <img src="src//img/header/logo.min.png" alt="nophoto" class="partners__img">
+          <img src="build/img/partners/cnii-tochmash.png" alt="ЦНИИ ТОЧМАШ" class="partners__img">
         </li>
         <li class="partners__item">
-          <img src="src//img/header/logo.min.png" alt="nophoto" class="partners__img">
+          <img src="build/img/partners/pccm.png" alt="Фарадей" class="partners__img">
         </li>
         <li class="partners__item">
-          <img src="src//img/header/logo.min.png" alt="nophoto" class="partners__img">
+          <img src="build/img/partners/faradey.png" alt="Фарадей" class="partners__img">
         </li>
         <li class="partners__item">
-          <img src="src//img/header/logo.min.png" alt="nophoto" class="partners__img">
+          <img src="build/img/partners/folk-project.png" alt="folk-project" class="partners__img">
         </li>
         <li class="partners__item">
-          <img src="src//img/header/logo.min.png" alt="nophoto" class="partners__img">
+          <img src="build/img/partners/immortal-regiment.png" alt="immortal-regiment" class="partners__img">
         </li>
         <li class="partners__item">
-          <img src="src//img/header/logo.min.png" alt="nophoto" class="partners__img">
+          <img src="build/img/partners/kursk-socium-grup.png" alt="kursk-socium-grup" class="partners__img">
         </li>
         <li class="partners__item">
-          <img src="src//img/header/logo.min.png" alt="nophoto" class="partners__img">
+          <img src="build/img/partners/mayak-profi.png" alt="mayak-profi" class="partners__img">
         </li>
         <li class="partners__item">
-          <img src="src//img/header/logo.min.png" alt="nophoto" class="partners__img">
+          <img src="build/img/partners/patriot-park.png" alt="patriot-park" class="partners__img">
+        </li>
+        <li class="partners__item">
+          <img src="build/img/partners/niiph.png" alt="niiph" class="partners__img">
+        </li>
+        <li class="partners__item">
+          <img src="build/img/partners/vektor.png" alt="vektor" class="partners__img">
+        </li>
+        <li class="partners__item">
+          <img src="build/img/partners/ratnik.png" alt="ratnik" class="partners__img">
+        </li>
+        <li class="partners__item">
+          <img src="build/img/partners/state-duma.png" alt="state-duma" class="partners__img">
+        </li>
+        <li class="partners__item">
+          <img src="build/img/partners/pyro-fx.png" alt="pyro-fx" class="partners__img">
+        </li>
+        <li class="partners__item">
+          <img src="build/img/partners/pet-graph.png" alt="pet-graph" class="partners__img">
         </li>
       </ul>
     </div>
   </section>
-  <section class="form-container" id="form-container">
-    <div class="form-container__wrapper wrapper">
-      <h2 class="form-container__title">
-        Заполните заявку учаснтика
+  <section class="materials" id="materials">
+    <div class="materials__wrapper wrapper">
+      <h2 class="materials__title h h--2">
+        Стань участником
       </h2>
-      <form action="" class="form-container__form form">
-        <div class="form__block-text">
-          <label for="i-name" class="form__title-text">Ваше Имя:</label>
-          <input type="text" name="name" id="i-name" class="form__text">
-          <label for="i-surname" class="form__title-text">Ваша фамилия:</label>
-          <input type="text" name="surname" id="i-surname" class="form__text">
-          <label for="i-date" class="form__title-text">Дата рождения:</label>
-          <input type="date" name="date" id="i-date" class="form__text">
-          <label for="i-social" class="form__title-text">Откуда Вы о нас узнали:</label>
-          <input type="text" name="i-social" id="i-social" class="form__text">
-          <label for="a" class="form__title-text">Ваше Имя:</label>
-          <input type="text" name="name" id="a" class="form__text">
-          <label for="b" class="form__title-text">Ваше Имя:</label>
-          <input type="text" name="name" id="b" class="form__text">
-          <label for="c" class="form__title-text">Ваше Имя:</label>
-          <input type="text" name="name" id="c" class="form__text">
-        </div>
-        <input type="submit" name="submit" class="form__btn btn">
-      </form>
+      <ul class="materials__list">
+        <li class="materials__item stage">
+          <h3 class="stage__title h h--3">I этап</h3>
+          <img src="build/img/materials/document-icon.png" alt="profile" class="stage__img">
+          <p class="stage__comment">Заполните анкету участника</p>
+        </li>
+        <li class="materials__item">
+          <h3 class="stage__title h h--3">II этап</h3>
+          <img src="build/img/materials/materials-test.png" alt="test" class="stage__img stage__img--test">
+          <p class="stage__comment">Пройдите тест</p>
+        </li>
+        <li class="materials__item">
+          <h3 class="stage__title h h--3">III этап</h3>
+          <img src="build/img/materials/materials-repost.png" alt="repost" class="stage__img">
+          <p class="stage__comment">Сделайте репост в социальных сетях</p>
+        </li>
+      </ul>
+      <a href="profile.html" class="materials__btn btn main-btn" target="_blank">Заполнить анкету</a>
     </div>
   </section>
   <footer id="footer" class="footer">
@@ -325,16 +368,16 @@
         </li>
       </ul>
       <div class="footer__social">
-        <img src="src/img/header/logo.min.png" alt="logo" class="footer__logo">
-        <ul class="footer__social social">
+        <button class="footer__btn btn order-btn">Заказать звонок</button>
+        <ul class="footer__list social">
           <li class="social__item">
-            <a href="#" class="social__link social__link--vk"></a>
+            <a href="https://vk.com/stroevye" class="social__link social__link--vk" target="_blank"></a>
           </li>
           <li class="social__item">
-            <a href="#" class="social__link social__link--youtube"></a>
+            <a href="https://www.youtube.com/channel/UC56X2VOFPN-qOeoTC5rA_mQ" class="social__link social__link--youtube" target="_blank"></a>
           </li>
           <li class="social__item">
-            <a href="#" class="social__link social__link--instagram"></a>
+            <a href="https://instagram.com/stroevye_v_e" class="social__link social__link--instagram" target="_blank"></a>
           </li>
         </ul>
       </div>
@@ -343,22 +386,32 @@
   <div class="back-call-container">
     <form action="" class="back-call-container__form back-call__form form">
       <h3 class="back-call__title h"> Введите Ваши данные</h2>
-      <label for="i-back-call" class="l-back-call__info">Ваша Фамилию:</label>
+      <label for="i-back-call" class="l-back-call__info">Фамилия:</label>
       <input type="text" class="i-back-call__info" id="i-back-call"/>
-      <label for="i-back-call" class="l-back-call__info">Ваше Имя:</label>
+      <label for="i-back-call" class="l-back-call__info">Имя:</label>
       <input type="text" class="i-back-call__info" id="i-back-call"/>
-      <label for="i-back-call" class="l-back-call__info"> Ваш телефон:</label>
+      <label for="i-back-call" class="l-back-call__info">Телефон:</label>
       <input type="text" class="i-back-call__info" id="i-back-call"/>
-      <label for="i-back-call" class="l-back-call__info"> Ваш e-mail:</label>
+      <label for="i-back-call" class="l-back-call__info">Е-mail:</label>
       <input type="text" class="i-back-call__info" id="i-back-call"/>
-      <label for="i-back-call" class="l-back-call__info"> Тема вопроса:</label>
+      <label for="i-back-call" class="l-back-call__info">Тема вопроса:</label>
       <input type="text" class="i-back-call__info" id="i-back-call"/>
-      <input type="submit" class="back-call__btn btn"/>
-      <button class="title-form__close-btn btn" aria-label="Закрыть форму"></button>
+      <input type="submit" class="back-call__btn btn submit-btn"/>
+      <button class="back-call__close-btn btn close-btn" aria-label="Закрыть форму"></button>
     </form>
   </div>
-  <script src="src/js/slider/swiper.min.js"></script>
-  <script src="src/js/slider.js"></script>
-  <script src="src/js/script.js"></script>
+  <div class="form-container-message">
+    <div class="message">
+      <h2 class="message__text h">
+        Осведомляем , что проводится набор всех желающих для участи в строевых выходных, которые состоятся 9 мая 2020 годя.
+      </h2>
+      <h2 class="message__text h">
+        форму можете заполнить в разделе Материалы, а так же можете написать нам на почту email@email.ru.
+      </h2>
+    </div>
+  </div>
+  <script src="build/js/slider/swiper.min.js"></script>
+  <script src="build/js/script.js"></script>
 </body>
 </html>
+

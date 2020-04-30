@@ -6,7 +6,10 @@ const uglify = require('gulp-uglify-es').default;
 
 function styles() {
   return gulp.src('./src/css/style.css')
-    .pipe(autoprefixer())
+    .pipe(autoprefixer({
+      browsers: ['>2%'],
+      cascade: false;
+    }))
     .pipe(cleanCSS({
       compatibility: 'ie8',
       cascade: false,
@@ -23,7 +26,7 @@ function scripts() {
 
 function watch() {
   gulp.watch('./src/css/**/*.css', styles)
-  gulp.watch('./src/js/main.js', scripts)
+  gulp.watch('./src/js/script.js', scripts)
 }
 
 gulp.task('styles', styles);
