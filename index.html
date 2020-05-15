@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head> 
+<head>
+  <meta name="yandex-verification" content="64bb4246ca8744e7" /> 
   <meta name="msapplication-TileColor" content="#2b5797">
   <meta name="theme-color" content="#ffffff">
   <meta charset="UTF-8">
+  <meta name="format-detection" content="telephone=no">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="apple-touch-icon" sizes="180x180" href="build/favicon/apple-touch-icon.png">
@@ -13,9 +15,23 @@
   <link rel="mask-icon" href="build/favicon/safari-pinned-tab.svg" color="#5bbad5">
   <link rel="stylesheet" type="text/css" href="build/css/style.css">
   <link rel="stylesheet" type="text/css" href="build/css/swiper.min.css">
-  <title>ВОЕННО-ПАТРИОТИЧЕСКИЕ ИГРЫ СТРОЕВЫЕ ВЫХОДНЫЕ</title>
+  <title>Военно-патриотический проект Строевые Выходные</title>
 </head>
 <body>
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(62772949, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+    });
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/62772949" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
   <header id="header" class="header">
     <div class="header__wrapper wrapper">
       <a href="#" class="header__logo">
@@ -26,14 +42,12 @@
         <span class="burger__line burger__line--2"></span>
         <span class="burger__line burger__line--3"></span>
       </button>
-      <div class="header__phone-container">
-        <a href="tel:+79999999999" class="header__phone">
-          8-999-999-99-99
+      <div class="header__phone-block phone-block">
+        <p class="phone-block__text">Свяжитесь с оператором</p>
+        <a href="tel:+79150721022" class="header__phone">
+          8-915-072-10-22
         </a>
-        <a href="tel:+79999999999" class="header__phone">
-          8-999-999-99-99
-        </a>
-      </div>
+      </div>  
       <button class="header__btn btn order-btn order-btn--icon" aria-label="Заказать звонок">Заказать звонок</button>
     </div>
     <div class="header__menu-block menu-block">
@@ -58,8 +72,8 @@
             <li class="top-menu__item">
               <a href="#footer" class="top-menu__link">Контакты</a>
             </li>
-            <li class="top-menu__item top-menu__item--member">
-              <a href="profile.html" class="top-menu__link" target="_blank">Стать участником</a>
+            <li class="top-menu__item">
+              <a href="#materials" class="top-menu__link top-menu__link--member">Стать участником</a>
             </li>
           </ul>
         </nav>
@@ -70,7 +84,9 @@
     <div class="title-page__wrapper wrapper">
       <img src="build/img/title-page/title-page-img.png" alt="star" class="title-page__img">
       <div class="title-page__content">
-        <h1 class="title-page__title top-title">Военно-патриотические игры<p class="top-title__word top-title__word--blue">Строевые</p><p class="top-title__word top-title__word--red">выходные</p></h1>
+        <h1 class="title-page__title top-title">
+          Военно-патриотический проект<span class="top-title__word top-title__word--blue">Строевые</span><span class="top-title__word top-title__word--red">выходные</span>
+        </h1>
         <ul class="title-page__social social">
           <li class="social__item">
             <a href="https://vk.com/stroevye" class="social__link social__link--vk" target="_blank"></a>
@@ -88,24 +104,24 @@
         </div>
       </div>
       <div class="title-page__form-container">
-        <form action="" class="title-page__form title-form">
+        <form action="build/php/sendDataTitleForm.php" method="post" class="title-page__form title-form">
           <h3 class="title-form__title h">Заказать обратный звонок</h3>
-          <label for="" class="l-title-form__info">Введите Ваше имя:</label>
-          <input type="text" class="i-title-form__info"/>
-          <label for="" class="l-title-form__info">Введите Ваш телефон:</label>
-          <input type="email" class="i-title-form__info"/>
-          <label for="" class="l-title-form__info">Тема обращения:</label>
-          <input type="text" class="i-title-form__info"/>
-          <input type="submit" class="i-title-form__submit submit-btn btn"/>
+          <label for="title-form-name" class="l-title-form__info">Ваше имя:</label>
+          <input type="text" name="title-form-name" id="title-form-name" class="i-title-form__info"/>
+          <label for="title-form-phone" class="l-title-form__info">Ваш телефон:</label>
+          <input type="tel" name="title-form-phone" id="title-form-phone" class="i-title-form__info"/>
+          <label for="title-form-subject" class="l-title-form__info">Тема обращения:</label>
+          <input type="text" name="title-form-subject" id="title-form-subject" class="i-title-form__info"/>
+          <input type="submit" name="title-form-submit" id="title-form-submit" class="i-title-form__submit submit-btn btn" value="Отправить" />
         </form>
       </div>
     </div>
     <div class="title-page__slider tp-slider">
       <div class="tp-slider__wrapper swiper-wrapper">
-        <img src="build/img/photo/slide-1.jpg" alt="" class="tp-slider__item swiper-slide">
-        <img src="build/img/photo/slide-2.jpg" alt="" class="tp-slider__item swiper-slide">
-        <img src="build/img/photo/slide-3.jpg" alt="" class="tp-slider__item swiper-slide">
-        <img src="build/img/photo/slide-4.jpg" alt="" class="tp-slider__item swiper-slide">
+        <img src="build/img/photo/slide-1.jpg" alt="slide-1" class="tp-slider__item swiper-slide">
+        <img src="build/img/photo/slide-2.jpg" alt="slide-2" class="tp-slider__item swiper-slide">
+        <img src="build/img/photo/slide-3.jpg" alt="slide-3" class="tp-slider__item swiper-slide">
+        <img src="build/img/photo/slide-4.jpg" alt="slide-4" class="tp-slider__item swiper-slide">
       </div>
     </div>
   </section>
@@ -113,8 +129,12 @@
     <div class="information__wrapper wrapper">
       <h2 class="information__title h h--2">О нас</h2>
       <div class="information__content"> 
-        <p>Межрегиональная Общественная Организаия "Военно&#8209;патриотическое&nbsp;общество&nbsp;- Строевые Выходные" создана по&nbsp;инициативе молодокого поклонения военнослужащих в&nbsp;ходе реализации с&nbsp;2016&nbsp;года социально значимого Военно&#8209;патриотического проекта "Строевые&nbsp;Выходные".</p>
-        <p>Целью проекта является создание доступных условий военной подготовки в&nbsp;обстановке максимально приближенной к&nbsp;реальной, а&nbsp;также популяризация службы в&nbsp;Вооруженных&nbsp;Силах Российской&nbsp;Федерации</p>
+        <p>Межрегиональная Общественная Организаия &laquo;Военно&#8209;патриотическое&nbsp;общество&nbsp;- Строевые Выходные&raquo; 
+          создана по&nbsp;инициативе молодого поколения военнослужащих в&nbsp;ходе реализации с&nbsp;2016&nbsp;года 
+          социально значимого Военно&#8209;патриотического проекта &laquo;Строевые&nbsp;Выходные&raquo;.</p>
+        <p>Целью проекта является создание доступных условий военной подготовки в&nbsp;обстановке 
+          максимально приближенной к&nbsp;реальной, а&nbsp;также популяризация службы в&nbsp;Вооруженных&nbsp;Силах 
+          Российской&nbsp;Федерации</p>
       </div>
     </div>
   </section>
@@ -129,10 +149,9 @@
             <button class="card__btn card-front__btn btn">Подробнее</button>
           </div>
           <div class="card__back">
-            <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa 
-              quae ab illo inventore veritatis et quasi architecto beatae vitae 
-              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit</p>
+            <p class="card__text">Огневая подгтовка проходит на специализированном полигоне ЦНИИТОЧМАШ под руководством обученных специалистов</p>
+            <p class="card__text">Стрельба производится из стрелкового оружия АК-74 с боевыми патронами по ростовым мишеням.</p>
+            <p class="card__text">В программу предусмотренно посещения музея с образцами отчественного стрелкового оружия.</p>
             <button class="card__btn card-back__btn btn">Обратно</button>
           </div>
         </li>
@@ -143,38 +162,41 @@
             <button class="card__btn card-front__btn btn">Подробнее</button>
           </div>
           <div class="card__back">
-            <p class="card__information">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa 
-              quae ab illo inventore veritatis et quasi architecto beatae vitae 
-              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit</p>
+            <p class="card__text">Тактическая подготовка проводится на территории военнизированной части и на полигоне "Патриот".</p>
+            <p class="card__text">В занятия включены работа в "двойках", "тройках"</p>
+            <p class="card__text">Занятия проводятся под руководством опытных сотрудников и действующих военнослужащих Вооруженных сил РФ</p>
             <button class="card__btn card-back__btn btn">Обратно</button>
           </div>
         </li>
         <li class="training__item card">
           <div class="card__front">
             <h3 class="card__title h h--3">Общая подготовка</h3>
-            <img src="build/img/training/common-training.png" alt="common-training" class="card__img">
+            <img src="build/img/training/theoretical-training.png" alt="theoretical-training" class="card__img">
             <button class="card__btn card-front__btn btn">Подробнее</button>
           </div>
           <div class="card__back">
-            <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa 
-              quae ab illo inventore veritatis et quasi architecto beatae vitae 
-              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit</p>
+            <p class="card__text">Во время подготовки будут проходить тренировка по одеванию ОЗК</p>
+            <p class="card__text">Попробуйте на практике применить первую медицинскую помощь</p>
+            <p class="card__text">А так же изучите приемы рукопашного боя под руководством специалистов</p>
             <button class="card__btn card-back__btn btn">Обратно</button>
           </div>
         </li>
         <li class="training__item card">
           <div class="card__front">
-            <h3 class="card__title h h--3">Теоретическая подготовка</h3>
-            <img src="build/img/training/theoretical-training.png" alt="theoretical-training" class="card__img">
+            <h3 class="card__title h h--3">Армейские будни</h3>
+            <img src="build/img/training/common-training.png" alt="common-training" class="card__img">
             <button class="card__btn card-front__btn btn">Подробнее</button>
           </div>
           <div class="card__back">
-            <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa 
-              quae ab illo inventore veritatis et quasi architecto beatae vitae 
-              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit</p>
+            <p class="card__text">
+              Вся подготовка сопровождается армейским бытом в котором будет место для команды подъем и отбой.
+            </p>
+            <p class="card__text">
+              В программу входит бесплатное питание в армейской столовой
+            </p>
+            <p class="card__text">
+              Все передвижения проходят в строю и под военные песни.
+            </p>
             <button class="card__btn card-back__btn btn">Обратно</button>
           </div>
         </li>
@@ -214,7 +236,7 @@
             <img src="build/img/photo/slide-8.jpg" alt="slide-8" class="photo-slider__img">
           </li>
           <li class="swiper-slide">
-            <img src="build/img/photo/slide-9.JPG" alt="slide-9" class="photo-slider__img">
+            <img src="build/img/photo/slide-9.jpg" alt="slide-9" class="photo-slider__img">
           </li>
           <li class="swiper-slide">
             <img src="build/img/photo/slide-10.jpg" alt="slide-10" class="photo-slider__img">
@@ -230,22 +252,42 @@
     <div class="video__wrapper wrapper">
       <h2 class="video__title h h--2">Видео</h2>
       <ul class="video__list">
-        <li class="video__content">
-          <p class="video__description">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.</p>
-          <div class="video__play">
-            <iframe class="video-block__video" src="https://www.youtube.com/embed/FTGFgFjSUhQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <li class="video__item video-content">
+          <div class="video-content__content">
+            <h3 class="video-content__title h h--3">"Строевые Выходные" - военно-патриотический проект</h3>
+            <p class="video-content__text">
+              Проект, который позволит в полной мере окунуться в суровые армейские будни. Подготовка проходит в режиме 
+              интенсива, куда входят выезд на полигон где проводятся стрельбы, тактическая и общая 
+              подготовка под руководством действующих офицеров Министерства Обороны РФ.<br>
+              все это ждёт участников заезда «Строевые Выходные» за 2 дня в реальных армейских условиях!
+            </p>
+          </div>
+          <div class="video-content__video-container">
+            <iframe class="video-content__video" src="https://www.youtube.com/embed/FTGFgFjSUhQ" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </li>
-        <li class="video__content">
-          <p class="video__description">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.</p>
-          <div class="video__play">
-            <iframe class="video-block__video" src="https://www.youtube.com/embed/r1wtsOuCOtY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <li class="video__item video-content">
+          <div class="video-content__content">
+            <h3 class="video-content__title h h--3">Защитницы Отечества</h3>
+            <p class="video-content__text">
+              &laquo;Строевые Выходные&raquo; ломают стереотип о том, что девушки - это слабый пол!<br>
+              Во время первого в истории проекта заезда для девушек участницы проявили силу и твердость своего характера, справившись со всеми армейскими испытаниями ничем не хуже парней!
+            </p>
+          </div>
+          <div class="video-content__video-container">
+            <iframe class="video-content__video" src="https://www.youtube.com/embed/r1wtsOuCOtY" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </li>
-        <li class="video__content">
-          <p class="video__description">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.</p>
-          <div class="video__play video-block">
-            <iframe class="video-block__video" src="https://www.youtube.com/embed/Pqaaz2Ryp1I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <li class="video__item video-content">
+          <div class="video-content__content">
+            <h3 class="video-content__title h h--3">Финал турнира в парке "Патриот"</h3>
+            <p class="video-content__text">
+              4 сильнейшие команды из разных регионов России, прошедшие все этапы отбора и показавшие лучшие 
+              результаты, сразились за право быть лучшими и получили ценные призы!
+            </p>
+          </div>
+          <div class="video-content__video-container">
+            <iframe class="video-content__video" src="https://www.youtube.com/embed/Pqaaz2Ryp1I" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </li>
       </ul>
@@ -255,30 +297,40 @@
   <section class="partners" id="partners">
     <div class="partners__wrapper wrapper">
       <h2 class="partners__title h h--2">
-        Наши партнеры
+        При поддержке
       </h2>
       <ul class="partners__list">
+        <li class="partners__item">
+          <img src="build/img/partners/state-duma.png" alt="state-duma" class="partners__img">
+        </li>
         <li class="partners__item">
           <img src="build/img/partners/ministry-of-defence.png" alt="ministry-of-defence" class="partners__img">
         </li>
         <li class="partners__item">
-          <img src="build/img/partners/sambo.png" alt="Федерация боевого самбо" class="partners__img">
+          <img src="build/img/partners/immortal-regiment.png" alt="immortal-regiment" class="partners__img">
+        </li>
+        <li class="partners__item">
+          <img src="build/img/partners/patriot-park.png" alt="patriot-park" class="partners__img">
         </li>
         <li class="partners__item">
           <img src="build/img/partners/cnii-tochmash.png" alt="ЦНИИ ТОЧМАШ" class="partners__img">
         </li>
         <li class="partners__item">
-          <img src="build/img/partners/pccm.png" alt="Фарадей" class="partners__img">
+          <img src="build/img/partners/sambo.png" alt="Федерация боевого самбо" class="partners__img">
+        </li>
+        <li class="partners__item">
+          <img src="build/img/partners/pccm.png" alt="РССМ" class="partners__img">
         </li>
         <li class="partners__item">
           <img src="build/img/partners/faradey.png" alt="Фарадей" class="partners__img">
         </li>
         <li class="partners__item">
-          <img src="build/img/partners/folk-project.png" alt="folk-project" class="partners__img">
+          <img src="build/img/partners/ratnik.png" alt="ratnik" class="partners__img">
         </li>
         <li class="partners__item">
-          <img src="build/img/partners/immortal-regiment.png" alt="immortal-regiment" class="partners__img">
+          <img src="build/img/partners/folk-project.png" alt="folk-project" class="partners__img">
         </li>
+        
         <li class="partners__item">
           <img src="build/img/partners/kursk-socium-grup.png" alt="kursk-socium-grup" class="partners__img">
         </li>
@@ -286,19 +338,10 @@
           <img src="build/img/partners/mayak-profi.png" alt="mayak-profi" class="partners__img">
         </li>
         <li class="partners__item">
-          <img src="build/img/partners/patriot-park.png" alt="patriot-park" class="partners__img">
-        </li>
-        <li class="partners__item">
           <img src="build/img/partners/niiph.png" alt="niiph" class="partners__img">
         </li>
         <li class="partners__item">
           <img src="build/img/partners/vektor.png" alt="vektor" class="partners__img">
-        </li>
-        <li class="partners__item">
-          <img src="build/img/partners/ratnik.png" alt="ratnik" class="partners__img">
-        </li>
-        <li class="partners__item">
-          <img src="build/img/partners/state-duma.png" alt="state-duma" class="partners__img">
         </li>
         <li class="partners__item">
           <img src="build/img/partners/pyro-fx.png" alt="pyro-fx" class="partners__img">
@@ -316,19 +359,25 @@
       </h2>
       <ul class="materials__list">
         <li class="materials__item stage">
-          <h3 class="stage__title h h--3">I этап</h3>
-          <img src="build/img/materials/document-icon.png" alt="profile" class="stage__img">
-          <p class="stage__comment">Заполните анкету участника</p>
+          <h3 class="stage__title h h--3">шаг 1</h3>
+          <img src="build/img/materials/profile.png" alt="profile" class="stage__img stage__img--profile">
+          <p class="stage__comment">
+            Заполни анкету
+          </p>
         </li>
-        <li class="materials__item">
-          <h3 class="stage__title h h--3">II этап</h3>
-          <img src="build/img/materials/materials-test.png" alt="test" class="stage__img stage__img--test">
-          <p class="stage__comment">Пройдите тест</p>
+        <li class="materials__item stage">
+          <h3 class="stage__title h h--3">шаг 2</h3>
+          <img src="build/img/materials/repost.png" alt="repost" class="stage__img">
+          <p class="stage__comment">
+            Сделай репост
+          </p>
         </li>
-        <li class="materials__item">
-          <h3 class="stage__title h h--3">III этап</h3>
-          <img src="build/img/materials/materials-repost.png" alt="repost" class="stage__img">
-          <p class="stage__comment">Сделайте репост в социальных сетях</p>
+        <li class="materials__item stage">
+          <h3 class="stage__title h h--3">шаг 3</h3>
+          <img src="build/img/materials/test.png" alt="test" class="stage__img stage__img--test stage__img--test">
+          <p class="stage__comment">
+            Пройди тест
+          </p>
         </li>
       </ul>
       <a href="profile.html" class="materials__btn btn main-btn" target="_blank">Заполнить анкету</a>
@@ -356,48 +405,63 @@
           <a href="#footer" class="bottom-menu__link">Контакты</a>
         </li>
       </ul>
-      <ul class="footer__contacts contacts">
-        <li class="contacts__item">
-          <a href="tel:+79999999999" class="contacts__link">8-999-999-99-99</a>
-        </li>
-        <li class="contacts__item">
-          <a href="tel:+79999999999" class="contacts__link">8-999-999-99-99</a>
-        </li>
-        <li class="contacts__item">
-          <a href="email:email@email.ru" class="contacts__link">email@email.ru</a>
-        </li>
-      </ul>
-      <div class="footer__social">
-        <button class="footer__btn btn order-btn">Заказать звонок</button>
-        <ul class="footer__list social">
-          <li class="social__item">
-            <a href="https://vk.com/stroevye" class="social__link social__link--vk" target="_blank"></a>
+      <div class="footer__media">
+        <h3 class="footer-form__title h h--3">Контакты</h3>
+        <ul class="footer__contacts contacts">
+          <li class="contacts__item">
+            <a href="tel:+79150721022" class="contacts__link">8-915-072-10-22</a>
           </li>
-          <li class="social__item">
-            <a href="https://www.youtube.com/channel/UC56X2VOFPN-qOeoTC5rA_mQ" class="social__link social__link--youtube" target="_blank"></a>
+          <li class="contacts__item">
+            <a href="email:email@email.ru" class="contacts__link">info@строевые.рф</a>
           </li>
-          <li class="social__item">
-            <a href="https://instagram.com/stroevye_v_e" class="social__link social__link--instagram" target="_blank"></a>
+          <li class="contacts__item">
+            <button class="footer__btn btn order-btn">Заказать звонок</button>
+          </li>
+          <li class="contacts__item">
+            <ul class="footer__list social">
+              <li class="social__item">
+                <a href="https://vk.com/wall-19746278_1462428" class="social__link social__link--vk" target="_blank"></a>
+              </li>
+              <li class="social__item">
+                <a href="https://www.youtube.com/channel/UC56X2VOFPN-qOeoTC5rA_mQ" class="social__link social__link--youtube" target="_blank"></a>
+              </li>
+              <li class="social__item">
+                <a href="https://instagram.com/stroevye_v_e" class="social__link social__link--instagram" target="_blank"></a>
+              </li>
+            </ul>
           </li>
         </ul>
       </div>
+      <form action="build/php/sendDataFooterForm.php" method="post" class="footer__form footer-form">
+        <h3 class="footer-form__title h h--3">Напишите нам</h3>
+        <input type="hidden" name="formName" value="Подвал = Футер">
+        <input type="text" name="footer-form-name" id="footer-form-name" class="footer-form__content" placeholder
+="Имя"/>
+        <input type="email" name="footer-form-email" id="footer-form-email" class="footer-form__content" placeholder
+="E-mail"/>
+        <textarea name="footer-form-text" id="footer-form-text" class="footer-form__content footer-form__content--text" wrap="soft"></textarea>
+        <input type="submit" name="footer-form-submit" id="footer-form-submit" value="Отправить" class="footer-form__submit btn submit-btn"/>
+      </form>
     </div>
   </footer>
   <div class="back-call-container">
-    <form action="" class="back-call-container__form back-call__form form">
-      <h3 class="back-call__title h"> Введите Ваши данные</h2>
-      <label for="i-back-call" class="l-back-call__info">Фамилия:</label>
-      <input type="text" class="i-back-call__info" id="i-back-call"/>
-      <label for="i-back-call" class="l-back-call__info">Имя:</label>
-      <input type="text" class="i-back-call__info" id="i-back-call"/>
-      <label for="i-back-call" class="l-back-call__info">Телефон:</label>
-      <input type="text" class="i-back-call__info" id="i-back-call"/>
-      <label for="i-back-call" class="l-back-call__info">Е-mail:</label>
-      <input type="text" class="i-back-call__info" id="i-back-call"/>
-      <label for="i-back-call" class="l-back-call__info">Тема вопроса:</label>
-      <input type="text" class="i-back-call__info" id="i-back-call"/>
-      <input type="submit" class="back-call__btn btn submit-btn"/>
-      <button class="back-call__close-btn btn close-btn" aria-label="Закрыть форму"></button>
+    <form action="build/php/sendDataCallBackForm-2.php" method="post" class="back-call-container__form back-call__form form">
+      <input type="hidden" name="formName" value="Форма обратной связи" />
+      <h3 class="back-call__title h">Мы с Вами свяжемся</h3>
+      <label for="back-call-name" class="l-back-call__info">Имя:</label>
+      <input type="text" name="back-call-name" class="i-back-call__info" id="back-call-name" autocomplete="off" placeholder
+="Иван"/>
+      <label for="back-call-phone" class="l-back-call__info">Телефон:</label>
+      <input type="tel" name="back-call-phone" class="i-back-call__info" id="back-call-phone" autocomplete="off" placeholder
+="+7-(999)-999-9999"/>
+      <label for="back-call-subject" class="l-back-call__info">Тема вопроса:</label>
+      <input type="text" name="back-call-subject" class="i-back-call__info" id="back-call-subject" autocomplete="off" placeholder
+="Хочу принять участие"/>
+      <input type="submit" name="back-call-submit" id="back-call-submit" class="back-call__btn btn submit-btn" value="Отправить"/>
+      <button class="back-call__close-btn btn close-btn" aria-label="Закрыть форму">
+        <span class="close-btn__line close-btn__line--1"></span>
+        <span class="close-btn__line close-btn__line--2"></span>
+      </button>
     </form>
   </div>
   <div class="form-container-message">
@@ -410,6 +474,8 @@
       </h2>
     </div>
   </div>
+  <script src="build/js/jquery.js"></script>
+  <script src="build/js/jquery.maskedinput.min.js"></script>
   <script src="build/js/slider/swiper.min.js"></script>
   <script src="build/js/script.js"></script>
 </body>

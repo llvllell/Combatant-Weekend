@@ -6,10 +6,7 @@ const uglify = require('gulp-uglify-es').default;
 
 function styles() {
   return gulp.src('./src/css/style.css')
-    .pipe(autoprefixer({
-      browsers: ['>2%'],
-      cascade: false;
-    }))
+    .pipe(autoprefixer())
     .pipe(cleanCSS({
       compatibility: 'ie8',
       cascade: false,
